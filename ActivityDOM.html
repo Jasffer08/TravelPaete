@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACTIVITY</title>
+</head>
+<body>
+<script>
+var body = document.getElementsByTagName("body").item(0);
+var divElement = document.createElement("div");
+var pElement = document.createElement("p");
+pElement.innerHTML = "This is a paragraph.";
+divElement.appendChild(pElement);
+var newElement = document.createElement("h1");
+newElement.innerHTML = "This is a header (new header)";
+divElement.insertBefore(newElement, pElement);
+var clonedElement = newElement.cloneNode(true);
+clonedElement.innerHTML = "This is a cloned header";
+body.appendChild(clonedElement);
+body.appendChild(divElement);
+</script>
+</body>
+</html>
