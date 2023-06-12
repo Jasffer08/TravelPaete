@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Assignment</title>
+    </head>
+    <script language="JavaScript">
+        var timerID;
+        var x = 0;
+        var y = 0;
+        function BeginAnimation(){
+            timerID = window.setInterval("ContinueAnimation()",50);
+        }
+        function ContinueAnimation(){
+            x += 10;
+            MyPhoto.style.left = x + 'px';
+            y += 4;
+            MyPhoto.style.top = y + 'px';
+            if (x>200){
+                window.clearInterval(timerID);
+            }
+        }
+    </script>
+    <body onload="BeginAnimation()" marginheight="0" topmargin="0" leftmargin="0">
+        <img id="MyPhoto" style="position:absolute; top: 0px; left: 0px;" src="tatlongkrus.jpeg">
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+Learn the Javascript • Implement a button control with event handler. • Understand the syntax
+rules for functions, variables, identifiers and assignment’s • Learn about the Document Object Control
+
+History JavaScript was created by Brendan Eich in 1995 during his time at Netscape
+Communications. It was inspired by Java, Scheme and Self.
+In late 1995, when Microsoft cottoned-on to the competitive threat the Web posed, the Internet
+Explorer project was started in an all-out attempt to wrestle control of the emerging platform
+from Netscape.
+In so doing Microsoft became a mortal threat, compelling Netscape to respond. First, they started
+a standardization process to prevent Microsoft gaining control of the JavaScript language.
+Second, they partnered with Sun to leverage their shared interest in breaking the Microsoft
+monopoly.
+Sun began development of Java in 1990 in an attempt to write a language for “smart
+appliances”. This approach floundered and in 1994, Sun regrouped and set sights on the Web as
+the delivery platform of choice. Sun did have a browser in 1995 before the Netscape partnership,
+but it was slow and resource hungry.
+So the Netscape/Sun partnership meant Sun acquired the use of a competitive browser and a
+delivery system for their strategic technology.
+2
+Netscape, on the other hand found a powerful ally against Microsoft. They also aimed to
+outmanoeuvre Microsoft by being the official browser of the highly anticipated platform that
+was Java.
+Brendan Eich has said that with Sun on board, they decided to surf the tidal wave of hype
+surrounding Java and position JavaScript as the companion language to Java, in the same way
+Visual Basic was to C++. So the name was a straightforward marketing ploy to gain acceptance.
+Netscape’s Mocha (later JavaScript) aimed to turn the web into a full-blown application
+platform.
+Furthermore, when used together with their LiveWire application server product, it would
+enable isomorphic development, with the same language used on both client and server. If this
+sounds familiar, it is because this was exactly what Sun was attempting to pull off with Java. At
+the time however, the Web was very limited when compared to Java; for example, drawing
+pixels was not possible in JavaScript as it is now with canvas. So Sun (erroneously, I believe)
+never saw the language as a competitor and the alliance held.
+Unfortunately for JavaScript, its early market positioning outlived its usefulness and later
+became a brake on market acceptance as it emerged as a viable technology in its own right.
+So JavaScript was conceived as a scripting language for the Web for both client and server side.
+It was then quickly re-positioned as a Web “companion” for Java. The unique circumstances of
+the birth of the language, including:
+the aforementioned marketing ploy, time-compressed initial development, a prejudice that
+development for the Web was not “serious”, the ubiquitous and “unbreakable” deployment
+environment (the Web), and the inclusion of language design elements unfamiliar to most
+developers.
+Led to a years-long period of misunderstanding, scorn and, yes, even hatred for the language. In
+the late 1990s and early 2000s even the authors of some books on JavaScript didn’t understand
+the fundamental elements of the language.
+Douglas Crockford was one of the pioneers of the rediscovery of the language. And the
+importance of his invention of the JSON data format using a subset of JavaScript syntax should
+not be underestimated.
+During the 2000s mindshare slowly shifted to view JavaScript as a serious language: a critical
+mass of developers emerged who understood the language. However, the “outsider status” of
+JavaScript continues to reverberate. Early design choices like automatic semicolon insertion
+(ASI), the event loop, lack of classes, unusual inheritance (prototypical) and type coercion are
+laughed at by people who have not taken the time to understand the thinking behind them.
+Developers watch other developers laughing at these features and infer that these features are
+worthy of ridicule and the cycle continues.
+Even Brendan Eich, the creator of the language, is occasionally apologetic for design decisions
+he made for the language. However, in my view these expressions of apology should not be
+3
+taken as confirmation that those decisions were wrong: but rather acknowledgement of the
+necessary inability of one language to please all developers.
+As we will see in later posts, criticisms of JavaScript are frequently insubstantial expressions of
+unfamiliarity or syntactic “taste”, by programmers more familiar with other languages. This is
+not to say the language is without flaws: the continuing lack of a decimal number primitive is
+unfortunate.
+Definition JavaScript is a lightweight, interpreted programming language. It is designed for
+creating networkcentric applications. It is complimentary to and integrated with Java. JavaScript
+is very easy to implement because it is integrated with HTML. It is open and cross-platform.
+Javascript is a MUST for students and working professionals to become a great Software
+Engineer specially when they are working in Web Development Domain. I will list down some
+of the key advantages of learning Javascript:
+• Javascript is the most popular programming language in the world and that makes it a
+programmer’s great choice. Once you learnt Javascript, it helps you developing great frontend
+as well as back-end softwares using different Javascript based frameworks like jQuery, Node.JS
+etc.
+ Javascript is everywhere, it comes installed on every modern web browser and so to learn
+Javascript you really do not need any special environment setup. For example Chrome,
+Mozilla Firefox , Safari and every browser you know as of today, supports Javascript.
+ Javascript helps you create really beautiful and crazy fast websites. You can develop your
+website with a console like look and feel and give your users the best Graphical User
+Experience.
+ JavaScript usage has now extended to mobile app development, desktop app development,
+and game development. This opens many opportunities for you as Javascript Programmer.
+ Due to high demand, there is tons of job growth and high pay for those who know JavaScript.
+You can navigate over to different job sites to see what having JavaScript skills looks like in
+the job market.
+ Great thing about Javascript is that you will find tons of frameworks and Libraries already
+developed which can be used directly in your software development to reduce your time to
+market.
+Applications of Javascript
+Programming As mentioned before, Javascript is one of the most widely used programming
+languages (Frontend as well as Back-end). It has it's presence in almost every area of software
+development. I'm going to list few of them here:
+ Client side validation - This is really important to verify any user input before submitting
+it to the server and Javascript plays an important role in validting those inputs at frontend itself.
+ Manipulating HTML Pages - Javascript helps in manipulating HTML page on the fly.
+This helps in adding and deleting any HTML tag very easily using javascript and modify
+your HTML to change its look and feel based on different devices and requirements.
+4
+ User Notifications - You can use Javascript to raise dynamic pop-ups on the webpages
+to give different types of notifications to your website visitors.
+ Back-end Data Loading - Javascript provides Ajax library which helps in loading backend data while you are doing some other processing. This really gives an amazing
+experience to your website visitors.
+ Presentations -JavaScript also provides the facility of creating presentations which gives
+website look and feel. JavaScript provides RevealJS and BespokeJS libraries to build a
+webbased slide presentations.
+ Server Applications - Node JS is built on Chrome's Javascript runtime for building fast
+and scalable network applications. This is an event based library which helps in
+developing very sophisticated server applications including Web Servers.
+Hello World Web Page
+When learning a new programming language, your first program is supposed to simply
+print “Hello, world!” That’s the traditional Hello World program. Because the program’s
+task is so simple, the code is short and it gives the learner an opportunity to focus on the
+syntax basics and not get bogged down with too many details. With that said, your first
+JavaScript “program” is embedded in FIGURE 1’s Hello web page, which displays
+“Hello, world!” when the user clicks the button.
+
+Now take a look at the Hello web page’s source code in FIGURE 2. You can see that there’s
+not much JavaScript—it’s just the code in the script container and the code that follows the
+onclick attribute. The rest of the web page is HTML code. Later, we’ll explain the JavaScript
+code that handles the text replacement when the user clicks the button, but let’s first examine
+the HTML code that’s in charge of displaying the web page’s button.
+5
+Fig. 2 Source code for hello web page
+JavaScript Statements JavaScript statements are the commands to tell the browser to what
+action to perform. Statements are separated by semicolon (;).
+JavaScript statement constitutes the JavaScript code which is translated by the browser line
+by line.
+Example of JavaScript statement:
+document.getElementById("demo").innerHTML = "Welcome";
+Following table shows the various JavaScript Statements –
+6
+JavaScript Comments
+JavaScript supports both C-style and C++-style comments, thus:
+ Any text between a // and the end of a line is treated as a comment and is ignored by
+JavaScript.
+ Any text between the characters /* and */ is treated as a comment. This may span
+multiple lines.
+ JavaScript also recognizes the HTML comment opening sequence<!--. JavaScript
+treats this as a single- line comment, just as it does the // comment.-->
+ The HTML comment closing sequence  is not recognized by JavaScript so it should
+be written as //-->
+Example:
+7
+JavaScript variable
+Variables are referred as named containers for storing information. We can place data
+into these containers and then refer to the data simply by naming the container.
+Rules to declare variable in JavaScript
+Here are the important rules that must be followed while declaring a variable in
+JavaScript.
+ In JavaScript variable names are case sensitive i.e. a is different from A.
+ Variable name can only be started with a underscore ( _ ) or a letter (from a to z or A to
+Z), or dollar ( $ ) sign.
+ Numbers (0 to 9) can only be used after a letter.
+ No other special character is allowed in variable name.
+Before you use a variable in a JavaScript program, you must declare it. Variables are
+declared with the var keyword as follows –
+Variable can be initialized at time of declaration or after declaration as followsJavaScript Data Type
+There are two kinds of data types as mentioned below –
+ Primitive Data Type
+ Non Primitive Data Type
+The following table describes Primitive Data Types available in JavaScript
+Sr. No. Datatype Description
+1 String
+8
+Can contain groups of character as single value. It is represented in double
+quotes. E.g. var x = “tutorial”.
+2 Numbers
+Contains the numbers with or without decimal. E.g. var x = 44, y=44.56;
+3 Booleans
+Contain only two values either true or false. E.g var x=true , y=false.
+4 Undefined
+Variable with no value is called Undefined. E.g. var x;
+5 Null
+If we assign null to a variable, it becomes empty. E.g. var x=null;
+The following table describes Non-Primitive Data Types in JavaScript
+Sr.No. Datatype Description
+1 Array
+Can contain groups of value of same type. E.g. var x={1,2,3,55};
+2 Objects
+Objects are stored in property and value pain. E.g. var rectangle = {length:
+5, breadth: 3};
+JavaScript Functions
+Function is a group of reusable statements (Code) that can be called any where in a program.
+In JavaScript function keyword is used to declare or define a function.
+Key Points
+ To define a function use function keyword followed by functionname, followed by
+parentheses ().
+ In parenthesis, we define parameters or attributes.
+ The group of reusable statements (code) is enclosed in curly braces {}. This code is
+executed whenever function is called.
+Syntax
+function functionname (p1, p2) {
+function coding…
+9
+JavaScript Operator
+Operators are used to perform operation on one, two or more operands. Operator is
+represented by a symbol such as +, =, *, % etc. Following are the operators supported
+by javascript –
+ Arithmetic Operators
+ Comparison Operators
+ Logical (or Relational) Operators
+ Assignment Operators
+ Conditional (or ternary) Operators
+ Arithmetic Operators
+Arithmetic Operators
+Following table shows all the arithmetic operators supported by javascript –
+Operator Description Example
++ Add two operands 10 + 10 will give 20
+- Subtract second operand from the first 10 -10 will give 0
+* Multiply two operands. 10 * 30 will give
+300
+/ Divide numerator by denominator 10/10 will give 1
+% It is called modulus operator and gives
+remainder of division.
+10%10 will give 0
+++ Increment operator, increases integer value
+by one
+10++ will give 11
+-- Decrement operator, decreases integer value
+by one
+10- - will give 9
+Comparison Operators
+Following table shows all the comparison operators supported by JavaScript –
+10
+Conditional Operator
+It is also called ternary operator, since it has three operands.
+Control Structure
+Control structure actually controls the flow of execution of a program. Following are the
+several control structure supported by JavaScript.
+ if…else
+ switch case
+ do while loop
+ while loop
+ for loop
+If … else
+The if statement is the fundamental control statement that allows JavaScript to make decisions
+and execute statements conditionally.
+11
+If (expression){
+Statement(s) to be executed if expression is true
+}
+Example
+<script type=”text/javascript”>
+<!—
+var age = 20;
+if(age>18){
+document.write(“<b>Qualifies for driving</b>”);
+}
+//-->
+</script>
+Switch case
+The basic syntax of the switch statement is to give an expression to evaluate and several
+different statements to execute based on the value of the expression. The interpreter checks
+each case against the value of the expression until a match is found. If nothing matches, a
+default condition will be used.
+Syntax
+switch (expression){
+case condition 1: statement(s)
+ break;
+case condition 2: statement(s)
+ break;
+……
+case condition n: statement(s)
+12
+ break;
+default: statement(s)
+}
+Example
+<script type=”text/javascript”>
+<!—
+var grade=’A’;
+document.write(“Entering switch block<br/>”);
+switch(grade){
+case’A’:document.write(“Good job<br/>”);
+break;
+case’B’:document.write(“Pretty good</br>”);
+break;
+case’C’:document.write(“Passed</br>”);
+break;
+case’D’:document.write(“not so good</br>”);
+break;
+case’F’:document.write(“failed</br>”);
+break;
+default:document.write(“Unknown grade</br>”)
+}
+document.write(“Existing switch block”);
+//-->
+</script>
+13
+Do while Loop
+The do...while loop is similar to the while loop except that the condition check happens at the
+end of the loop. This means that the loop will always be executed at least once, even if the
+condition is false.
+Syntax
+While Loop
+The purpose of a while loop is to execute a statement or code block repeatedly as long as
+expression is true. Once expression becomes false, the loop will be exited.
+Syntax
+while (expression){
+Statement(s) to be executed if expression is true
+14
+}
+Example
+For Loop
+The for loop is the most compact form of looping and includes the following three important
+parts –
+• The loop initialization where we initialize our counter to a starting value. The initialization
+statement is executed before the loop begins.
+• The test statement which will test if the given condition is true or not. If condition is true
+then code given inside the loop will be executed otherwise loop will come out.
+15
+• The iteration statement where you can increase or decrease your counter.
+Syntax
+for (initialization; test condition; iteration statement){
+Statement(s) to be executed if test condition is true
+}
+Example:
+Creating Sample Program
+Following is the sample program that shows time, when we click in button.
+16
+Output
+Document Object Model
+The document object represents the whole html document.
+When html document is loaded in the browser, it becomes a document object. It is the root
+element that represents the html document. It has properties and methods. By the help of
+document object, we can add dynamic content to our web page.
+As mentioned earlier, it is the object of window. So
+1. window.document
+Is same as
+17
+1. document
+According to W3C - "The W3C Document Object Model (DOM) is a platform and
+language-neutral interface that allows programs and scripts to dynamically access and update
+the content, structure, and style of a document."
+Properties of document object
+Let's see the properties of document object that can be accessed and modified by
+the document object.
+Methods of document object
+We can access and change the contents of document by its methods. The important
+methods of document object are as follows:
+Accessing field value by document object
+18
+In this example, we are going to get the value of input text by user. Here, we are using
+document.form1.name.value to get the value of name field.
+Here, document is the root element that represents the html document.
+form1 is the name of the form.
+name is the attribute name of the input text.
+value is the property, that returns the value of the input text.
+Let's see the simple example of document object that prints name with welcome
+message.
